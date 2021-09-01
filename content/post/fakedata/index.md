@@ -87,7 +87,9 @@ public class UserEmailValidatorTests
 
 ```
 
-However, as soon as these objects become more complicated, such as with domain-driven design, it becomes a lot more tedious to create valid objects. Doubly so for those that have to be stored in a database with their own integration rules. Additionally, when constructing these objects manually a change in how the initialization needs to happen, the order, or what it means it be a valid object can cause tests that are merely stubbing behavior to break. Sure, they're an easy fix but it's annoying, tedious, and most importantly - _preventable_. In large code bases with many thousands of tests even trivial work becomes paralyzing.
+However, as soon as these objects become more complicated, such as with domain-driven design, it becomes a lot more tedious to create valid objects. Doubly so for those that have to be stored in a database with their own integration rules. Additionally, when constructing these objects manually a change in how the initialization needs to happen, the order, or what it means it be a valid object can cause tests that are merely stubbing behavior to break. 
+
+Sure, they're an easy fix but it's annoying, tedious, and most importantly - _preventable_. In large code bases with many thousands of tests even trivial work becomes paralyzing.
 
 Enter Bogus.
 
@@ -122,7 +124,11 @@ public class UserEmailValidatorTests
 }
 ```
 
-I'm a big fan of this type of abstraction as it keeps our tests very small and our concerns focused on just the system under test. Fake factories make sharing the setup and creation of fakes easy. As the `User` grows and evolves we can further configure Bogus inside of the fake factory to keep generating a valid user. Bogus is extremely configurable - able to handle constructors, navigational properties, generating real-ish data, derived properties (FirstName, LastName, and then FullName is a combination of those two automatically), and more. Now you never have to deal with that tedium again!
+I'm a big fan of this type of abstraction as it keeps our tests very small and our concerns focused on just the system under test. 
+
+Fake factories make sharing the setup and creation of fakes easy. As the `User` grows and evolves we can further configure Bogus inside of the fake factory to keep generating a valid user. Bogus is extremely configurable - able to handle constructors, navigational properties, generating real-ish data, derived properties (FirstName, LastName, and then FullName is a combination of those two automatically), and more. 
+
+Now you never have to deal with that tedium again!
 
 A more complete example:
 
