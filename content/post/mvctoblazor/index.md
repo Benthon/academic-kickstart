@@ -5,7 +5,7 @@ summary: 'A step-by-step guide to take your MVC project and spice it up with Bla
 authors:
 - ben-sampica
 categories:
-- ASP.NET Core
+- DotNetCore
 - CSharp
 - Blazor
 date: "2021-05-16T00:00:00Z"

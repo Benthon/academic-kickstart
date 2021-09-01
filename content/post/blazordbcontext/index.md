@@ -5,7 +5,7 @@ summary: 'By default, EF Core’s DbContext is scoped. This will cause issues wi
 authors:
 - ben-sampica
 categories:
-- ASP.NET Core
+- DotNetCore
 - Entity Framework Core
 - CSharp
 - Blazor

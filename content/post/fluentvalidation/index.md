@@ -5,7 +5,7 @@ summary: 'Learning, using, and extending the FluentValidation library.'
 authors:
 - ben-sampica
 categories:
-- ASP.NET Core
+- DotNetCore
 - CSharp
 date: "2020-05-20T00:00:00Z"
 featured: false

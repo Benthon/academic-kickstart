@@ -5,7 +5,7 @@ summary: 'I use Bogus to demonstrate how fake factories can be used to easily cr
 authors:
 - ben-sampica
 categories:
-- .NET Core
+- CSharp
 - Testing
 date: "2021-08-31T00:00:00Z"
 featured: false
