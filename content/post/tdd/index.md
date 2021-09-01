@@ -5,8 +5,7 @@ summary: 'Explaining Test-Driven Development through the lens of a video game.'
 authors:
 - ben-sampica
 categories:
-- Agile
-- DevOps
+- Testing
 date: "2020-08-10T00:00:00Z"
 featured: false
 draft: false
